@@ -1,6 +1,6 @@
 # Monorepo Typescript Template
 
-This is an official Docker starter Turborepo.
+This is an example of a monorepo with typescript and docker.
 
 ## What's inside?
 
