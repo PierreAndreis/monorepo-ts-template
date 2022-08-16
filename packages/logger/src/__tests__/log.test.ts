@@ -1,10 +1,11 @@
-import { log } from "..";
+import { createLogger } from "..";
 
-jest.spyOn(global.console, "log");
+jest.spyOn(process.stdout, "write");
 
 describe("logger", () => {
-  it("prints a message", () => {
-    log("hello");
-    expect(console.log).toBeCalled();
+  it("prints a message", async () => {
+    const logger = createLogger("test");
+    logger.info("hello");
+    expect(process.stdout.write).toBeCalled();
   });
 });

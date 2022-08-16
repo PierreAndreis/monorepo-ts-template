@@ -18,8 +18,16 @@
   "jest": {
     "preset": "jest-presets/jest/node"
   },
+  "dependencies": {
+    "@sentry/integrations": "6.17.1",
+    "@sentry/node": "6.17.1",
+    "pino": "^8.4.1",
+    "pino-http": "^8.2.0",
+    "pino-pretty": "7.5.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.22",
+    "@types/node": "^13.13.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
     "jest": "^26.6.3",

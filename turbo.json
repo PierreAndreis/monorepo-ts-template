@@ -2,7 +2,12 @@
   "pipeline": {
     "build": {
       "outputs": ["dist/**", ".next/**", "public/dist/**"],
-      "dependsOn": ["^build", "$NEXT_PUBLIC_API_HOST"]
+      "dependsOn": [
+        "^build",
+        "$NEXT_PUBLIC_API_HOST",
+        "$SENTRY_DNS",
+        "$NODE_ENV"
+      ]
     },
     "test": {
       "outputs": ["coverage/**"],
